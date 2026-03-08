@@ -46,7 +46,7 @@
         <span class="header__sub">Вироби з нержавіючої сталі • Львів</span>
       </div>
       <div class="header__right">
-        <nav class="nav">
+        <nav class="nav" id="nav">
           <a href="#about">Про нас</a>
           <a href="#products">Продукція</a>
           <a href="#advantages">Переваги</a>
@@ -60,9 +60,19 @@
           </svg>
           <span class="btn--call__label">Подзвонити</span>
         </a>
+        <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <a href="#about"      class="mobile-nav__link">Про нас</a>
+    <a href="#products"   class="mobile-nav__link">Продукція</a>
+    <a href="#advantages" class="mobile-nav__link">Переваги</a>
+    <a href="#contacts"   class="mobile-nav__link">Контакти</a>
+  </div>
 
   <section class="hero">
     <div class="hero__bg">
@@ -430,17 +440,31 @@
           </div>
         </div>
 
-        <div class="contacts__map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82203.41403933515!2d23.919445869531246!3d49.839683000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0L7Qsiwg0JvRjNCy0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1234567890123!5m2!1sru!2sua"
-            width="100%"
-            height="100%"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Карта Львова"
-          ></iframe>
+        <div class="contact-form-wrap">
+          <h3 class="contact-form__title">Залишити заявку</h3>
+          <p class="contact-form__sub">Заповніть форму — ми зв'яжемось з вами найближчим часом</p>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="cf-name">Ваше ім'я *</label>
+              <input class="form-input" id="cf-name" name="name" type="text" placeholder="Іван Петренко" autocomplete="name" />
+              <p class="form-error" id="err-name"></p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cf-phone">Телефон *</label>
+              <input class="form-input" id="cf-phone" name="phone" type="tel" placeholder="+38 (067) 000 00 00" autocomplete="tel" />
+              <p class="form-error" id="err-phone"></p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cf-message">Опис замовлення</label>
+              <textarea class="form-input form-textarea" id="cf-message" name="message" placeholder="Що вас цікавить? Розміри, об'єми, матеріал…" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 2 11 13"/><path d="M22 2 15 22 11 13 2 9l20-7z"/>
+              </svg>
+              Надіслати заявку
+            </button>
+          </form>
         </div>
 
       </div>
@@ -474,9 +498,12 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+    Заявку надіслано! Ми зв'яжемось з вами найближчим часом.
+  </div>
+
+  <script src="main.js"></script>
 
 </body>
 </html>
