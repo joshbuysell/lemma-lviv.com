@@ -18,3 +18,11 @@ mobileNav.querySelectorAll('.mobile-nav__link').forEach(link => {
     mobileNav.setAttribute('aria-hidden', 'true');
   });
 });
+
+document.addEventListener('click', function (e) {
+  var link = e.target.closest('a[href^="tel:"], a[href^="mailto:"]');
+  if (link) {
+    e.preventDefault();
+    gtagSendEvent(link.href);
+  }
+});
