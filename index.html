@@ -12,11 +12,9 @@
   <meta name="geo.placename" content="Львів" />
   <link rel="canonical" href="https://lemma-lviv.com/" />
 
-  <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231e3a5f'/><text x='16' y='23' font-family='Arial,sans-serif' font-size='20' font-weight='700' text-anchor='middle' fill='white'>L</text></svg>" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231e3a5f'/><text x='16' y='23' font-family='Arial,sans-serif' font-size='20' font-weight='700' text-anchor='middle' fill='white'>L</text></svg>" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://lemma-lviv.com/" />
   <meta property="og:title" content="Вироби з нержавіючої сталі у Львові | ТзОВ Лемма" />
@@ -24,7 +22,6 @@
   <meta property="og:locale" content="uk_UA" />
   <meta property="og:image" content="https://lh3.googleusercontent.com/p/AF1QipNg-fzM9fMhloIhghqFfSTjrQe5AQtWev2y4U-A=s1360-w1360-h1020-rw" />
 
-  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -82,7 +79,6 @@
 
   <link rel="preconnect" href="https://lh3.googleusercontent.com" />
 
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-404092443"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -91,7 +87,6 @@
     gtag('config', 'AW-404092443');
   </script>
 
-  <!-- Google tag (gtag.js) event - delayed navigation helper -->
   <script>
     function gtagSendEvent(url) {
       var callback = function () {
@@ -100,6 +95,22 @@
         }
       };
       gtag('event', 'conversion_event_contact', {
+        'event_callback': callback,
+        'event_timeout': 2000,
+      });
+      return false;
+    }
+  </script>
+
+  <!-- Google tag (gtag.js) event - delayed navigation helper -->
+  <script>
+    function gtagSendEvent_1(url) {
+      var callback = function () {
+        if (typeof url === 'string') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion_event_contact_1', {
         'event_callback': callback,
         'event_timeout': 2000,
       });
@@ -259,7 +270,6 @@
 
       <div class="products__grid">
 
-        <!-- img17: AF1QipP1mQ5 — встановлена одночашкова мийка в приміщенні -->
         <article class="product-card" itemscope itemtype="https://schema.org/Product">
           <div class="product-card__photo">
             <img
@@ -286,7 +296,6 @@
           </div>
         </article>
 
-        <!-- img9: AF1QipM3y — стіл з мийкою та пластиковою обробною дошкою -->
         <article class="product-card" itemscope itemtype="https://schema.org/Product">
           <div class="product-card__photo">
             <img
@@ -313,7 +322,6 @@
           </div>
         </article>
 
-        <!-- img8: AF1QipMc28 — стіл з глибокою вбудованою ванною-мийкою -->
         <article class="product-card" itemscope itemtype="https://schema.org/Product">
           <div class="product-card__photo">
             <img
@@ -340,7 +348,6 @@
           </div>
         </article>
 
-        <!-- img1: AF1QipNg — вертикальний циліндричний котел на твердому паливі -->
         <article class="product-card" itemscope itemtype="https://schema.org/Product">
           <div class="product-card__photo">
             <img
@@ -367,7 +374,6 @@
           </div>
         </article>
 
-        <!-- img15: AF1QipO6ASu — настінна полиця на кухні з мисками та тарілками -->
         <article class="product-card" itemscope itemtype="https://schema.org/Product">
           <div class="product-card__photo">
             <img
@@ -394,7 +400,6 @@
           </div>
         </article>
 
-        <!-- img4: AF1QipMW2 — прямокутна ванна з решіткою всередині -->
         <article class="product-card" itemscope itemtype="https://schema.org/Product">
           <div class="product-card__photo">
             <img
@@ -421,7 +426,6 @@
           </div>
         </article>
 
-        <!-- img10: AF1QipOJvBhO — великий конічний резервуар на рамі -->
         <article class="product-card" itemscope itemtype="https://schema.org/Product">
           <div class="product-card__photo">
             <img
@@ -448,7 +452,6 @@
           </div>
         </article>
 
-        <!-- img12: AF1QipPz0 — ЦКТ (циліндрично-конічний танк) на колесах -->
         <article class="product-card" itemscope itemtype="https://schema.org/Product">
           <div class="product-card__photo">
             <img
@@ -475,7 +478,6 @@
           </div>
         </article>
 
-        <!-- img2: AF1QipP6 — циліндричний кошик-фільтр із сітки -->
         <article class="product-card" itemscope itemtype="https://schema.org/Product">
           <div class="product-card__photo">
             <img
@@ -502,7 +504,6 @@
           </div>
         </article>
 
-        <!-- img7: AF1QipO9t — піч-кам'янка для сауни встановлена -->
         <article class="product-card" itemscope itemtype="https://schema.org/Product">
           <div class="product-card__photo">
             <img
@@ -529,7 +530,6 @@
           </div>
         </article>
 
-        <!-- img14: AF1QipO6PUI — шампур із нержавійки з кільцевою ручкою -->
         <article class="product-card" itemscope itemtype="https://schema.org/Product">
           <div class="product-card__photo">
             <img
@@ -556,7 +556,6 @@
           </div>
         </article>
 
-        <!-- img6: AF1QipNd6 — колектор з патрубками, нестандартна деталь -->
         <article class="product-card" itemscope itemtype="https://schema.org/Product">
           <div class="product-card__photo">
             <img
@@ -695,7 +694,7 @@
         </a>
       </div>
     </div>
-  </section><!-- /contacts -->
+  </section>
 
   </main>
 
