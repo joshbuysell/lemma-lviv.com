@@ -35,6 +35,11 @@ body {
   color: var(--color-slate-800);
   background: var(--color-white);
   line-height: 1.6;
+  padding-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  body { padding-bottom: 0; }
 }
 
 img {
@@ -676,7 +681,82 @@ ul {
 
 .btn--full { width: 100%; justify-content: center; }
 
+/* Header phone number (visible on desktop only) */
+.header__phone-number {
+  display: none;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-white);
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+.header__phone-number:hover { color: var(--color-slate-200); }
+
+/* Mobile nav phone link */
+.mobile-nav__link--phone {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(37,99,235,.15);
+  color: #93c5fd;
+  font-weight: 600;
+  border-bottom: none;
+}
+.mobile-nav__link--phone:hover { background: rgba(37,99,235,.25); }
+
+/* Hero trust line */
+.hero__trust {
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--color-slate-200);
+  opacity: 0.85;
+}
+
+/* Mid-page CTA section */
+.section--cta-mid {
+  background: linear-gradient(to right, var(--color-blue), var(--color-blue-dark));
+  padding: 3rem 0;
+}
+
+/* Footer phone */
+.footer__phone {
+  display: block;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 0.75rem;
+  transition: color 0.2s;
+}
+.footer__phone:hover { color: #93c5fd; }
+
+/* Sticky mobile call button */
+.sticky-call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background: var(--color-blue);
+  color: var(--color-white);
+  padding: 0.85rem 1rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 -2px 10px rgba(0,0,0,.15);
+  transition: background 0.2s;
+}
+.sticky-call:hover { background: var(--color-blue-dark); }
+.sticky-call .icon { width: 1.25rem; height: 1.25rem; }
+
 @media (min-width: 768px) {
   .burger      { display: none; }
   .mobile-nav  { display: none !important; }
+  .header__phone-number { display: flex; }
+  .sticky-call { display: none; }
 }
