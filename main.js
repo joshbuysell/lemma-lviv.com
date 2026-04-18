@@ -24,5 +24,6 @@ document.addEventListener('click', function (e) {
   if (link) {
     e.preventDefault();
     gtagSendEvent(link.href);
+    gtagSendEvent_3(link.href);
   }
 });
