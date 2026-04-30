@@ -847,3 +847,43 @@ ul {
   .header__phone-number { display: flex; }
   .sticky-call { display: none; }
 }
+
+.nav a.is-active {
+  color: var(--color-white);
+  border-bottom: 2px solid var(--color-blue);
+  padding-bottom: 2px;
+}
+.mobile-nav__link.is-active {
+  background: rgba(37, 99, 235, 0.2);
+  color: #93c5fd;
+}
+
+.page-hero {
+  background: linear-gradient(to right, var(--color-slate-900), var(--color-slate-800));
+  padding: 2.5rem 0 2rem;
+}
+.page-hero__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.page-hero__breadcrumb {
+  font-size: 0.85rem;
+  color: var(--color-slate-400);
+}
+.page-hero__breadcrumb a {
+  color: var(--color-slate-400);
+  text-decoration: none;
+}
+.page-hero__breadcrumb a:hover { color: #93c5fd; }
+.page-hero__title {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 800;
+  color: var(--color-white);
+  line-height: 1.2;
+}
+.page-hero__sub {
+  font-size: 1rem;
+  color: var(--color-slate-400);
+  max-width: 600px;
+}
