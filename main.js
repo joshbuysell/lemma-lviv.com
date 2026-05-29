@@ -142,7 +142,9 @@ if (contactForm) {
     heightVal.textContent = h + ' мм';
 
     var base = basePrices[product] || 5000;
+    // Baseline dimensions (mm): 1000 width, 600 depth, 850 height — coefficient normalizes to these
     var sizeCoeff = (w / 1000) * (d / 600) * (h / 850);
+    // Floor at 0.5 so small items don't drop below 50% of base price
     sizeCoeff = Math.max(sizeCoeff, 0.5);
 
     var price = base * sizeCoeff * materialMultipliers[mat];
