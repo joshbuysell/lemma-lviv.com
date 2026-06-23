@@ -11,10 +11,7 @@
   <meta name="geo.region" content="UA-46" />
   <meta name="geo.placename" content="Львів" />
   <link rel="canonical" href="https://lemma-lviv.com/" />
-
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%232563eb'/><text x='16' y='23' font-family='Arial,sans-serif' font-size='20' font-weight='700' text-anchor='middle' fill='white'>L</text></svg>" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%232563eb'/><text x='16' y='23' font-family='Arial,sans-serif' font-size='20' font-weight='700' text-anchor='middle' fill='white'>L</text></svg>" />
-
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231a5ea8'/><text x='16' y='23' font-family='Arial,sans-serif' font-size='20' font-weight='700' text-anchor='middle' fill='white'>L</text></svg>" type="image/svg+xml" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://lemma-lviv.com/" />
   <meta property="og:title" content="Заміна стіків на датчик Холла / TMR у Львові | LEMMA" />
@@ -27,51 +24,23 @@
     "@type": "LocalBusiness",
     "name": "LEMMA — заміна стіків на датчик Холла",
     "alternateName": "Lemma Lviv",
-    "description": "Заміна аналогових стіків на магнітні датчики Холла та TMR у геймпадах DualSense, Xbox Series, Xbox One у Львові. Ремонт стік-дрифту з гарантією.",
+    "description": "Заміна аналогових стіків на магнітні датчики Холла та TMR у геймпадах DualSense, Xbox Series, Xbox One у Львові.",
     "url": "https://lemma-lviv.com",
     "telephone": "+380XXXXXXXXX",
     "priceRange": "₴₴",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Львів",
-      "addressRegion": "Львівська область",
-      "addressCountry": "UA"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 49.8397,
-      "longitude": 24.0297
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": "Львів"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-      "opens": "10:00",
-      "closes": "19:00"
-    },
+    "address": { "@type": "PostalAddress", "addressLocality": "Львів", "addressRegion": "Львівська область", "addressCountry": "UA" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 49.8397, "longitude": 24.0297 },
+    "areaServed": { "@type": "City", "name": "Львів" },
+    "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:00", "closes": "19:00" },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Послуги з ремонту геймпадів",
       "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Заміна стіків DualSense (PS5) на датчик Холла" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Заміна стіків Xbox Series X|S на датчик Холла" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Заміна стіків Xbox One на датчик Холла" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Встановлення TMR-датчиків у геймпади" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Діагностика стік-дрифту" } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Заміна стіків DualSense на датчик Холла" }, "price": "650", "priceCurrency": "UAH" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Заміна стіків Xbox на датчик Холла" }, "price": "650", "priceCurrency": "UAH" },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Встановлення TMR-датчиків" }, "price": "950", "priceCurrency": "UAH" }
       ]
     }
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "LEMMA — заміна стіків на датчик Холла у Львові",
-    "url": "https://lemma-lviv.com"
   }
   </script>
 
@@ -104,26 +73,23 @@
       return false;
     }
   </script>
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header class="header" role="banner">
     <div class="container header__inner">
-      <div class="header__brand">
-        <a href="index.html" style="text-decoration:none;color:inherit">
-          <strong class="header__title">LEMMA</strong>
-          <span class="header__sub">Заміна стіків &bull; Львів</span>
-        </a>
-      </div>
+      <a href="index.html" class="header__logo">
+        <img src="logo.svg" alt="LEMMA — ремонт джойстиків, заміна стіків" />
+      </a>
       <div class="header__right">
         <nav class="nav" id="nav" aria-label="Головна навігація">
-          <a href="#services">Послуги</a>
+          <a href="#prices">Ціни</a>
           <a href="#how-it-works">Як працює</a>
           <a href="#advantages">Переваги</a>
           <a href="contacts.html">Контакти</a>
         </nav>
+        <a href="contacts.html" class="btn btn--primary" style="display:none" id="headerCta">Записатися</a>
         <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -132,355 +98,170 @@
   </header>
 
   <nav class="mobile-nav" id="mobileNav" aria-hidden="true" aria-label="Мобільна навігація">
-    <a href="#services"     class="mobile-nav__link">Послуги</a>
+    <a href="#prices" class="mobile-nav__link">Ціни</a>
     <a href="#how-it-works" class="mobile-nav__link">Як працює</a>
-    <a href="#advantages"   class="mobile-nav__link">Переваги</a>
+    <a href="#advantages" class="mobile-nav__link">Переваги</a>
     <a href="contacts.html" class="mobile-nav__link">Контакти</a>
   </nav>
 
-  <main id="main-content">
+  <main>
 
   <!-- ═══ HERO ═══ -->
   <section class="hero" aria-label="Головний банер">
-    <div class="hero__bg"></div>
-    <div class="container hero__content">
-      <div class="hero__badge">
-        <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-        <span>Сервіс у Львові</span>
+    <div class="container">
+      <div class="hero__logo">
+        <img src="logo.svg" alt="LEMMA логотип" />
       </div>
-
-      <div class="hero__controllers">
-        <div class="hero__controller-icon" aria-hidden="true">
-          <!-- DualSense icon -->
-          <svg viewBox="0 0 80 60" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M15 28c-4 2-8 8-8 14 0 4 2 7 5 7s5-2 6-6l4-10h36l4 10c1 4 3 6 6 6s5-3 5-7c0-6-4-12-8-14"/>
-            <path d="M15 28c0-10 8-18 25-18s25 8 25 18"/>
-            <circle cx="30" cy="28" r="6"/>
-            <circle cx="50" cy="34" r="6"/>
-            <rect x="35" y="18" width="10" height="6" rx="1.5"/>
-          </svg>
-        </div>
-        <div class="hero__controller-icon" aria-hidden="true">
-          <!-- Xbox icon -->
-          <svg viewBox="0 0 80 60" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14 24c-3 4-6 10-6 16 0 5 3 8 6 8 4 0 8-4 14-12"/>
-            <path d="M66 24c3 4 6 10 6 16 0 5-3 8-6 8-4 0-8-4-14-12"/>
-            <path d="M28 36c-6 8-10 12-14 12"/>
-            <path d="M52 36c6 8 10 12 14 12"/>
-            <path d="M28 36c-4-6-6-12-6-18 0-4 3-8 9-10"/>
-            <path d="M52 36c4-6 6-12 6-18 0-4-3-8-9-10"/>
-            <path d="M31 8c3-2 6-3 9-3s6 1 9 3"/>
-            <circle cx="30" cy="22" r="6"/>
-            <circle cx="52" cy="30" r="6"/>
-            <circle cx="40" cy="18" r="3"/>
-          </svg>
-        </div>
-      </div>
-
-      <h1 class="hero__title">
-        Заміна стіків на<br /><span class="hero__title-accent">датчик Холла та TMR</span>
-      </h1>
-      <p class="hero__sub">
-        Забудьте про стік-дрифт назавжди. Встановлюємо магнітні датчики на геймпади DualSense&nbsp;(PS5) та Xbox — точність і довговічність без зносу.
-      </p>
+      <h1 class="hero__title">Забудьте про <span>стік-дрифт</span> назавжди</h1>
+      <p class="hero__sub">Замінюємо стандартні потенціометри на магнітні датчики Холла та TMR. Ваш геймпад як новий — працюємо тільки у Львові.</p>
       <div class="hero__cta">
-        <a href="contacts.html" class="btn btn--primary btn--lg">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          Записатися на ремонт
-        </a>
-        <a href="#services" class="btn btn--ghost btn--lg">Наші послуги</a>
+        <a href="contacts.html" class="btn btn--primary btn--lg">Записатися на ремонт</a>
+        <a href="#prices" class="btn btn--outline btn--lg">Дивитись ціни</a>
       </div>
-      <div class="hero__trust">
-        <span>
-          <svg class="icon icon--sm icon--green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
-          Гарантія
-        </span>
-        <span>
-          <svg class="icon icon--sm icon--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <div class="hero__badges">
+        <div class="hero__badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          Гарантія 6 місяців
+        </div>
+        <div class="hero__badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
           Ремонт за 1-2 години
-        </span>
-        <span>
-          <svg class="icon icon--sm icon--primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="hero__badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           Тільки Львів
-        </span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ PROBLEM: Drift vs Hall ═══ -->
-  <section class="section section--alt" aria-labelledby="problem-heading">
+  <!-- ═══ PROBLEM vs SOLUTION ═══ -->
+  <section class="section section--white">
     <div class="container">
-      <h2 class="section__title section__title--center" id="problem-heading">Чому стіки починають дрифтити?</h2>
-      <p class="section__sub section__sub--center">Стандартні потенціометри зношуються через тертя. Магнітні датчики — ні.</p>
-
-      <div class="problem__grid">
-        <div class="problem-card problem-card--bad">
-          <div class="problem-card__label">
-            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+      <h2 class="section__title">Чому стіки дрифтять?</h2>
+      <p class="section__sub">Стандартні потенціометри зношуються через тертя. Магнітні датчики — ні.</p>
+      <div class="compare__grid">
+        <div class="compare-card compare-card--bad">
+          <div class="compare-card__label">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
             Проблема
           </div>
-          <h3 class="problem-card__title">Потенціометр (стандартний)</h3>
-          <p class="problem-card__text">Механічний контакт між повзунком і резистивною доріжкою. Пластик стирається за 3-6 місяців активної гри — з'являється стік-дрифт: персонаж рухається сам, камера крутиться, приціл &laquo;плаває&raquo;.</p>
-          <div class="problem-card__visual">
-            <svg viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- Stick module base -->
-              <rect x="70" y="90" width="140" height="50" rx="6" fill="#1a1a2e" stroke="#ef4444" stroke-width="1" opacity="0.6"/>
-              <rect x="85" y="95" width="20" height="8" rx="2" fill="#2a2a3e" stroke="#444" stroke-width="0.5"/>
-              <rect x="175" y="95" width="20" height="8" rx="2" fill="#2a2a3e" stroke="#444" stroke-width="0.5"/>
-              <rect x="115" y="130" width="50" height="6" rx="1" fill="#2a2a3e" stroke="#444" stroke-width="0.5"/>
-              <!-- Pins -->
-              <line x1="100" y1="140" x2="100" y2="155" stroke="#666" stroke-width="2"/>
-              <line x1="120" y1="140" x2="120" y2="155" stroke="#666" stroke-width="2"/>
-              <line x1="140" y1="140" x2="140" y2="155" stroke="#666" stroke-width="2"/>
-              <line x1="160" y1="140" x2="160" y2="155" stroke="#666" stroke-width="2"/>
-              <line x1="180" y1="140" x2="180" y2="155" stroke="#666" stroke-width="2"/>
-              <!-- Gimbal housing -->
-              <circle cx="140" cy="82" r="28" fill="#1e1e30" stroke="#ef4444" stroke-width="1.2" opacity="0.7"/>
-              <!-- Worn track marks -->
-              <path d="M125 82 Q130 76 140 78 Q150 80 155 82" stroke="#ef4444" stroke-width="0.8" opacity="0.5" stroke-dasharray="2 1"/>
-              <path d="M140 68 Q136 75 138 82 Q140 89 140 96" stroke="#ef4444" stroke-width="0.8" opacity="0.5" stroke-dasharray="2 1"/>
-              <!-- Stick shaft (tilted - drifting) -->
-              <ellipse cx="140" cy="82" rx="10" ry="10" fill="#2a2a40" stroke="#555" stroke-width="1"/>
-              <line x1="140" y1="82" x2="152" y2="38" stroke="#888" stroke-width="4" stroke-linecap="round"/>
-              <circle cx="152" cy="36" r="12" fill="#333" stroke="#555" stroke-width="1.5"/>
-              <circle cx="152" cy="36" r="8" fill="#2a2a3e"/>
-              <!-- Drift indicator -->
-              <path d="M168 32 L180 28 M168 40 L180 44" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
-              <path d="M175 26 L180 28 L176 33" stroke="#ef4444" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.8"/>
-              <path d="M175 46 L180 44 L176 39" stroke="#ef4444" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.8"/>
-              <!-- Warning scratches on potentiometer -->
-              <line x1="125" y1="100" x2="155" y2="100" stroke="#ef4444" stroke-width="0.5" opacity="0.4" stroke-dasharray="3 2"/>
-              <text x="140" y="12" text-anchor="middle" fill="#ef4444" font-size="11" font-weight="600" font-family="system-ui" opacity="0.9">стік дрифтить ↗</text>
-            </svg>
-          </div>
+          <h3 class="compare-card__title">Потенціометр (стандартний)</h3>
+          <p class="compare-card__text">Механічний контакт між повзунком і резистивною доріжкою. Пластик стирається за 3-6 місяців активної гри — з'являється стік-дрифт: персонаж рухається сам, камера крутиться, приціл «плаває».</p>
         </div>
-
-        <div class="problem-card problem-card--good">
-          <div class="problem-card__label">
-            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+        <div class="compare-card compare-card--good">
+          <div class="compare-card__label">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
             Рішення
           </div>
-          <h3 class="problem-card__title">Датчик Холла / TMR</h3>
-          <p class="problem-card__text">Безконтактне магнітне зчитування. Магніт рухається, але нічого не торкається — немає тертя, немає зносу. Стік повертається точно в центр, працює роками без дрифту.</p>
-          <div class="problem-card__visual">
-            <svg viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- Stick module base -->
-              <rect x="70" y="90" width="140" height="50" rx="6" fill="#1a1a2e" stroke="#2563eb" stroke-width="1" opacity="0.6"/>
-              <rect x="85" y="95" width="20" height="8" rx="2" fill="#2a2a3e" stroke="#555" stroke-width="0.5"/>
-              <rect x="175" y="95" width="20" height="8" rx="2" fill="#2a2a3e" stroke="#555" stroke-width="0.5"/>
-              <rect x="115" y="130" width="50" height="6" rx="1" fill="#2a2a3e" stroke="#555" stroke-width="0.5"/>
-              <!-- Pins -->
-              <line x1="100" y1="140" x2="100" y2="155" stroke="#777" stroke-width="2"/>
-              <line x1="120" y1="140" x2="120" y2="155" stroke="#777" stroke-width="2"/>
-              <line x1="140" y1="140" x2="140" y2="155" stroke="#777" stroke-width="2"/>
-              <line x1="160" y1="140" x2="160" y2="155" stroke="#777" stroke-width="2"/>
-              <line x1="180" y1="140" x2="180" y2="155" stroke="#777" stroke-width="2"/>
-              <!-- Hall sensor housing -->
-              <circle cx="140" cy="82" r="28" fill="#1e1e30" stroke="#2563eb" stroke-width="1.2" opacity="0.7"/>
-              <!-- Magnetic field lines -->
-              <ellipse cx="140" cy="82" rx="20" ry="20" fill="none" stroke="#2563eb" stroke-width="0.6" opacity="0.3" stroke-dasharray="3 3"/>
-              <ellipse cx="140" cy="82" rx="14" ry="14" fill="none" stroke="#38bdf8" stroke-width="0.6" opacity="0.3" stroke-dasharray="2 2"/>
-              <!-- Hall sensor chip -->
-              <rect x="133" y="75" width="14" height="14" rx="2" fill="#2563eb" opacity="0.2" stroke="#2563eb" stroke-width="0.8"/>
-              <text x="140" y="85" text-anchor="middle" fill="#2563eb" font-size="6" font-family="monospace" opacity="0.7">IC</text>
-              <!-- Stick shaft (perfectly centered) -->
-              <ellipse cx="140" cy="82" rx="10" ry="10" fill="#2a2a40" stroke="#666" stroke-width="1"/>
-              <line x1="140" y1="82" x2="140" y2="36" stroke="#999" stroke-width="4" stroke-linecap="round"/>
-              <circle cx="140" cy="34" r="12" fill="#444" stroke="#666" stroke-width="1.5"/>
-              <circle cx="140" cy="34" r="8" fill="#3a3a4e"/>
-              <!-- Magnet glow -->
-              <circle cx="140" cy="82" r="6" fill="#2563eb" opacity="0.15"/>
-              <circle cx="140" cy="82" r="3" fill="#38bdf8" opacity="0.3"/>
-              <!-- Precision indicator -->
-              <circle cx="140" cy="34" r="2" fill="#38bdf8" opacity="0.6"/>
-              <text x="140" y="12" text-anchor="middle" fill="#2563eb" font-size="11" font-weight="600" font-family="system-ui" opacity="0.9">точно в центрі ✓</text>
-            </svg>
-          </div>
+          <h3 class="compare-card__title">Датчик Холла / TMR</h3>
+          <p class="compare-card__text">Безконтактне магнітне зчитування. Магніт рухається, але нічого не торкається — немає тертя, немає зносу. Стік повертається точно в центр, працює роками без дрифту.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ SERVICES ═══ -->
-  <section id="services" class="section section--dark" aria-labelledby="services-heading">
+  <!-- ═══ PRICES ═══ -->
+  <section id="prices" class="section section--gray">
     <div class="container">
-      <h2 class="section__title section__title--center" id="services-heading">Наші послуги</h2>
-      <p class="section__sub section__sub--center">Заміна стіків на магнітні датчики для всіх популярних геймпадів. Працюємо тільки у Львові.</p>
+      <h2 class="section__title">Ціни на заміну стіків</h2>
+      <p class="section__sub">Вартість включає роботу, датчики та калібрування. Діагностика — безкоштовно.</p>
 
-      <div class="services__grid">
+      <div class="prices__grid">
 
-        <article class="service-card">
-          <div class="service-card__visual service-card__visual--ps">
-            <img src="https://images.unsplash.com/photo-1754594207981-8b97210a6d3a?w=600&q=80&auto=format&fit=crop" alt="DualSense PS5 контролер" loading="lazy" />
+        <div class="price-card">
+          <div class="price-card__img">
+            <img src="https://images.unsplash.com/photo-1754594207981-8b97210a6d3a?w=600&q=80&auto=format&fit=crop" alt="DualSense PS5" loading="lazy" />
           </div>
-          <div class="service-card__body">
-            <h3 class="service-card__title">DualSense (PS5)</h3>
-            <p class="service-card__desc">Заміна обох аналогових стіків на датчик Холла або TMR. Повна калібрування після встановлення.</p>
-            <div class="service-card__tags">
-              <span class="service-card__tag">Hall Effect</span>
-              <span class="service-card__tag service-card__tag--accent">TMR</span>
-              <span class="service-card__tag">Gulikit / Veion</span>
-            </div>
-            <a href="contacts.html" class="service-card__link">
-              <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 10.8a19.79 19.79 0 0 1-3.07-8.72A2 2 0 0 1 3.62 0h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 7.91a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/><path d="M14.05 2a9 9 0 0 1 8 7.94"/><path d="M14.05 6A5 5 0 0 1 18 10"/></svg>
-              Записатися
-            </a>
+          <div class="price-card__body">
+            <h3 class="price-card__name">DualSense (PS5) — Hall Effect</h3>
+            <p class="price-card__desc">Заміна обох стіків на датчики Холла. Gulikit / Veion — перевірені бренди без дрифту.</p>
+            <div class="price-card__price">650 ₴</div>
+            <p class="price-card__price-note">обидва стіки · запчастини включено</p>
+            <ul class="price-card__features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg> Безконтактний датчик</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg> Калібрування включено</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg> Гарантія 6 місяців</li>
+            </ul>
+            <a href="contacts.html" class="btn btn--outline btn--full price-card__btn">Записатися</a>
           </div>
-        </article>
+        </div>
 
-        <article class="service-card">
-          <div class="service-card__visual service-card__visual--xbox">
-            <img src="https://images.unsplash.com/photo-1591109864300-46c417fa0475?w=600&q=80&auto=format&fit=crop" alt="Xbox Series контролер" loading="lazy" />
+        <div class="price-card price-card--featured">
+          <div class="price-card__img">
+            <img src="https://images.unsplash.com/photo-1689593671231-ea788fda8414?w=600&q=80&auto=format&fit=crop" alt="DualSense TMR" loading="lazy" />
           </div>
-          <div class="service-card__body">
-            <h3 class="service-card__title">Xbox Series X|S</h3>
-            <p class="service-card__desc">Встановлення магнітних датчиків у контролер Xbox Series. Усуваємо дрифт і покращуємо точність.</p>
-            <div class="service-card__tags">
-              <span class="service-card__tag">Hall Effect</span>
-              <span class="service-card__tag service-card__tag--accent">TMR</span>
-              <span class="service-card__tag">Без дрифту</span>
-            </div>
-            <a href="contacts.html" class="service-card__link">
-              <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 10.8a19.79 19.79 0 0 1-3.07-8.72A2 2 0 0 1 3.62 0h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 7.91a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/><path d="M14.05 2a9 9 0 0 1 8 7.94"/><path d="M14.05 6A5 5 0 0 1 18 10"/></svg>
-              Записатися
-            </a>
+          <div class="price-card__body">
+            <h3 class="price-card__name">DualSense / Xbox — TMR</h3>
+            <p class="price-card__desc">Преміум-датчики TMR з ультра-точністю. Ідеально для шутерів та кіберспорту.</p>
+            <div class="price-card__price">950 ₴</div>
+            <p class="price-card__price-note">обидва стіки · преміум-датчики</p>
+            <ul class="price-card__features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg> Найвища точність</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg> Менше енергоспоживання</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg> Гарантія 6 місяців</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg> Для кіберспорту</li>
+            </ul>
+            <a href="contacts.html" class="btn btn--primary btn--full price-card__btn">Записатися</a>
           </div>
-        </article>
+        </div>
 
-        <article class="service-card">
-          <div class="service-card__visual service-card__visual--xbox-one">
-            <img src="https://images.unsplash.com/photo-1531705771309-2c39f632e69a?w=600&q=80&auto=format&fit=crop" alt="Xbox One контролер" loading="lazy" />
+        <div class="price-card">
+          <div class="price-card__img">
+            <img src="https://images.unsplash.com/photo-1591109864300-46c417fa0475?w=600&q=80&auto=format&fit=crop" alt="Xbox Controller" loading="lazy" />
           </div>
-          <div class="service-card__body">
-            <h3 class="service-card__title">Xbox One</h3>
-            <p class="service-card__desc">Модернізація контролера Xbox One — заміна потенціометрів на безконтактні датчики Холла.</p>
-            <div class="service-card__tags">
-              <span class="service-card__tag">Hall Effect</span>
-              <span class="service-card__tag">Модернізація</span>
-            </div>
-            <a href="contacts.html" class="service-card__link">
-              <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 10.8a19.79 19.79 0 0 1-3.07-8.72A2 2 0 0 1 3.62 0h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 7.91a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/><path d="M14.05 2a9 9 0 0 1 8 7.94"/><path d="M14.05 6A5 5 0 0 1 18 10"/></svg>
-              Записатися
-            </a>
+          <div class="price-card__body">
+            <h3 class="price-card__name">Xbox Series / One — Hall Effect</h3>
+            <p class="price-card__desc">Встановлення датчиків Холла в контролери Xbox. Усуваємо дрифт, покращуємо точність.</p>
+            <div class="price-card__price">650 ₴</div>
+            <p class="price-card__price-note">обидва стіки · запчастини включено</p>
+            <ul class="price-card__features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg> Xbox Series X|S та One</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg> Калібрування включено</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg> Гарантія 6 місяців</li>
+            </ul>
+            <a href="contacts.html" class="btn btn--outline btn--full price-card__btn">Записатися</a>
           </div>
-        </article>
+        </div>
 
       </div>
 
-      <!-- Sensor types -->
-      <h3 class="section__title section__title--center" style="margin-top:2rem">Типи датчиків</h3>
-      <p class="section__sub section__sub--center">Пропонуємо два типи магнітних датчиків — обидва без механічного зносу</p>
-
-      <div class="sensor__grid">
-        <div class="sensor-card sensor-card--hall">
-          <div class="sensor-card__icon">
-            <svg class="icon icon--xl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="4" y="4" width="16" height="16" rx="2"/>
-              <path d="M9 4v16"/>
-              <path d="M15 4v16"/>
-              <path d="M4 12h16"/>
-              <circle cx="12" cy="12" r="3"/>
-            </svg>
-          </div>
-          <h4 class="sensor-card__title">Hall Effect</h4>
-          <p class="sensor-card__text">Класичний магнітний датчик на ефекті Холла. Надійний, перевірений, доступний за ціною. Ідеальний для більшості геймерів.</p>
-          <ul class="sensor-card__features">
-            <li>
-              <svg class="icon icon--sm icon--primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-              Без механічного зносу
-            </li>
-            <li>
-              <svg class="icon icon--sm icon--primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-              Gulikit, Veion та інші бренди
-            </li>
-            <li>
-              <svg class="icon icon--sm icon--primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-              Оптимальне співвідношення ціна/якість
-            </li>
-          </ul>
-        </div>
-
-        <div class="sensor-card sensor-card--tmr">
-          <div class="sensor-card__icon">
-            <svg class="icon icon--xl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="9"/>
-              <circle cx="12" cy="12" r="5"/>
-              <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
-              <line x1="12" y1="3" x2="12" y2="1"/>
-              <line x1="12" y1="23" x2="12" y2="21"/>
-              <line x1="3" y1="12" x2="1" y2="12"/>
-              <line x1="23" y1="12" x2="21" y2="12"/>
-            </svg>
-          </div>
-          <h4 class="sensor-card__title">TMR (тунельний магніторезистивний)</h4>
-          <p class="sensor-card__text">Найновіша технологія з ще вищою точністю та меншим енергоспоживанням. Преміум-варіант для вимогливих геймерів.</p>
-          <ul class="sensor-card__features">
-            <li>
-              <svg class="icon icon--sm icon--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-              Вища точність ніж Hall
-            </li>
-            <li>
-              <svg class="icon icon--sm icon--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-              Менше енергоспоживання
-            </li>
-            <li>
-              <svg class="icon icon--sm icon--accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-              Преміум для кіберспорту
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ MID CTA ═══ -->
-  <section class="section--cta-mid" aria-label="Заклик до дії">
-    <div class="cta-mid__inner container">
-      <h3 class="cta-mid__title">Стік дрифтить? Вирішимо за пару годин</h3>
-      <p class="cta-mid__sub">Залиште заявку — проконсультуємо безкоштовно</p>
-      <a href="contacts.html" class="btn btn--primary btn--lg">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-        Залишити заявку
-      </a>
+      <p style="text-align:center;margin-top:2rem;color:var(--text-dim);font-size:.9rem">Діагностика стік-дрифту — <strong style="color:var(--green)">безкоштовно</strong> · Чистка та профілактика — <strong>250 ₴</strong></p>
     </div>
   </section>
 
   <!-- ═══ HOW IT WORKS ═══ -->
-  <section id="how-it-works" class="section section--alt" aria-labelledby="how-heading">
+  <section id="how-it-works" class="section section--white">
     <div class="container">
-      <h2 class="section__title section__title--center" id="how-heading">Як це працює</h2>
-      <p class="section__sub section__sub--center">Весь процес — від діагностики до готового геймпада — займає 1-2 години</p>
-
+      <h2 class="section__title">Як це працює</h2>
+      <p class="section__sub">Від діагностики до готового геймпада — 1-2 години</p>
       <div class="steps__grid">
-        <div class="step-card">
-          <div class="step-card__num">1</div>
-          <div class="step-card__content">
-            <h3 class="step-card__title">Діагностика</h3>
-            <p class="step-card__text">Перевіряємо геймпад, визначаємо ступінь дрифту кожного стіка, тестуємо кнопки та тригери. Діагностика безкоштовна.</p>
+        <div class="step">
+          <div class="step__num">1</div>
+          <div>
+            <h3 class="step__title">Діагностика</h3>
+            <p class="step__text">Перевіряємо обидва стіки на дрифт і dead zone. Визначаємо, які датчики підійдуть найкраще. Безкоштовно.</p>
           </div>
         </div>
-
-        <div class="step-card">
-          <div class="step-card__num">2</div>
-          <div class="step-card__content">
-            <h3 class="step-card__title">Розбирання</h3>
-            <p class="step-card__text">Акуратно розбираємо контролер, знімаємо старі потенціометри. Працюємо з професійним інструментом — жодних пошкоджень корпусу.</p>
+        <div class="step">
+          <div class="step__num">2</div>
+          <div>
+            <h3 class="step__title">Розбирання</h3>
+            <p class="step__text">Акуратно розбираємо контролер, знімаємо старі потенціометри без пошкоджень плати та шлейфів.</p>
           </div>
         </div>
-
-        <div class="step-card">
-          <div class="step-card__num">3</div>
-          <div class="step-card__content">
-            <h3 class="step-card__title">Встановлення датчика</h3>
-            <p class="step-card__text">Впаюємо магнітний датчик Холла або TMR. Фіксуємо, перевіряємо надійність з'єднання, збираємо контролер.</p>
+        <div class="step">
+          <div class="step__num">3</div>
+          <div>
+            <h3 class="step__title">Встановлення</h3>
+            <p class="step__text">Впаюємо нові магнітні датчики Холла або TMR. Перевіряємо якість кожного з'єднання.</p>
           </div>
         </div>
-
-        <div class="step-card">
-          <div class="step-card__num">4</div>
-          <div class="step-card__content">
-            <h3 class="step-card__title">Калібрування та тест</h3>
-            <p class="step-card__text">Калібруємо стіки, тестуємо в грі: перевіряємо мертві зони, лінійність, повернення в центр. Забираєте геймпад того ж дня.</p>
+        <div class="step">
+          <div class="step__num">4</div>
+          <div>
+            <h3 class="step__title">Калібрування</h3>
+            <p class="step__text">Точне калібрування осей, перевірка dead zone і чутливості. Тестуємо в грі перед видачею.</p>
           </div>
         </div>
       </div>
@@ -488,73 +269,52 @@
   </section>
 
   <!-- ═══ ADVANTAGES ═══ -->
-  <section id="advantages" class="section section--dark" aria-labelledby="adv-heading">
+  <section id="advantages" class="section section--gray">
     <div class="container">
-      <h2 class="section__title section__title--center" id="adv-heading">Чому обирають нас</h2>
-      <p class="section__sub section__sub--center">Досвід, якісні компоненти та індивідуальний підхід до кожного геймпада</p>
-
-      <div class="advantages__grid">
-        <div class="adv-card">
-          <div class="adv-card__icon">
-            <svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-          </div>
-          <h3 class="adv-card__title">Гарантія на роботу</h3>
-          <p class="adv-card__text">Даємо гарантію на встановлений датчик та роботу. Якщо щось не так — виправимо безкоштовно.</p>
+      <h2 class="section__title">Чому обирають нас</h2>
+      <p class="section__sub">Спеціалізуємося саме на заміні стіків — робимо це щодня</p>
+      <div class="advs__grid">
+        <div class="adv">
+          <div class="adv__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3 class="adv__title">Гарантія 6 місяців</h3>
+          <p class="adv__text">На роботу та встановлені датчики. Якщо щось не так — виправимо безкоштовно.</p>
         </div>
-
-        <div class="adv-card">
-          <div class="adv-card__icon adv-card__icon--accent">
-            <svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <h3 class="adv-card__title">Швидкий ремонт</h3>
-          <p class="adv-card__text">Заміна стіків займає 1-2 години. Привезли геймпад — забрали того ж дня, готовий до гри.</p>
+        <div class="adv">
+          <div class="adv__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <h3 class="adv__title">Ремонт за 1-2 години</h3>
+          <p class="adv__text">Не потрібно чекати тижні. Привозите геймпад — забираєте того ж дня.</p>
         </div>
-
-        <div class="adv-card">
-          <div class="adv-card__icon adv-card__icon--green">
-            <svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-          </div>
-          <h3 class="adv-card__title">0% дрифту</h3>
-          <p class="adv-card__text">Магнітні датчики не мають контактних елементів. Жодного тертя — жодного зносу — жодного дрифту.</p>
+        <div class="adv">
+          <div class="adv__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.73 12.73 1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div>
+          <h3 class="adv__title">0% дрифту</h3>
+          <p class="adv__text">Магнітні датчики не мають механічного контакту. Ніякого дрифту — навіть через роки.</p>
         </div>
-
-        <div class="adv-card">
-          <div class="adv-card__icon">
-            <svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="m10 12 2 2 4-4"/></svg>
-          </div>
-          <h3 class="adv-card__title">Якісні компоненти</h3>
-          <p class="adv-card__text">Використовуємо датчики від Gulikit, Veion та інших перевірених виробників. Жодних дешевих підробок.</p>
+        <div class="adv">
+          <div class="adv__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg></div>
+          <h3 class="adv__title">Gulikit / Veion</h3>
+          <p class="adv__text">Працюємо тільки з перевіреними брендами датчиків — ніяких noname.</p>
         </div>
-
-        <div class="adv-card">
-          <div class="adv-card__icon adv-card__icon--accent">
-            <svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><line x1="12" y1="1" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/><line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/></svg>
-          </div>
-          <h3 class="adv-card__title">Точність у кожній грі</h3>
-          <p class="adv-card__text">Відчуйте різницю в шутерах, гонках та файтингах. Магнітні датчики дають плавніший і точніший відгук.</p>
+        <div class="adv">
+          <div class="adv__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m15 9-6 6m0-6 6 6"/></svg></div>
+          <h3 class="adv__title">Без прихованих платежів</h3>
+          <p class="adv__text">Ціна включає датчики, роботу та калібрування. Жодних доплат після.</p>
         </div>
-
-        <div class="adv-card">
-          <div class="adv-card__icon adv-card__icon--green">
-            <svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <h3 class="adv-card__title">Зручно у Львові</h3>
-          <p class="adv-card__text">Працюємо у Львові. Зателефонуйте, домовтеся про зручний час — і привозьте геймпад.</p>
+        <div class="adv">
+          <div class="adv__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <h3 class="adv__title">Зручно у Львові</h3>
+          <p class="adv__text">Центральна локація. Пн-Сб 10:00-19:00. Записуйтесь на зручний час.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ FINAL CTA ═══ -->
-  <section class="section section--alt" aria-label="Контакти">
-    <div class="container" style="text-align:center">
-      <h2 class="section__title section__title--center">Готові позбутися стік-дрифту?</h2>
-      <p class="section__sub section__sub--center" style="margin-bottom:2rem">Залиште заявку — відповімо та запишемо на зручний час</p>
-      <div class="hero__cta" style="justify-content:center;flex-wrap:wrap">
-        <a href="contacts.html" class="btn btn--primary btn--lg">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          Залишити заявку
-        </a>
+  <!-- ═══ CTA ═══ -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="cta-banner">
+        <h2 class="cta-banner__title">Стік дрифтить? Вирішимо сьогодні</h2>
+        <p class="cta-banner__sub">Залиште заявку — проконсультуємо, підберемо датчики та запишемо на зручний час</p>
+        <a href="contacts.html" class="btn btn--white btn--lg">Залишити заявку</a>
       </div>
     </div>
   </section>
@@ -562,14 +322,12 @@
   </main>
 
   <footer class="footer" role="contentinfo">
-    <div class="container footer__inner">
+    <div class="container">
       <p class="footer__copy">&copy; <span id="year"></span> LEMMA. Всі права захищені.</p>
-      <p class="footer__sub">Заміна стіків на датчик Холла &bull; м. Львів, Україна</p>
+      <p class="footer__sub">Ремонт джойстиків · Заміна стіків · м. Львів, Україна</p>
     </div>
   </footer>
 
-
   <script src="main.js"></script>
-
 </body>
 </html>

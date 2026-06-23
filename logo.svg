@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 100">
+  <!-- Controller body -->
+  <g transform="translate(10, 12)">
+    <rect x="12" y="18" width="56" height="44" rx="12" fill="#1a5ea8"/>
+    <rect x="0" y="36" width="20" height="24" rx="8" fill="#1a5ea8"/>
+    <rect x="60" y="36" width="20" height="24" rx="8" fill="#1a5ea8"/>
+    <!-- Left stick -->
+    <circle cx="28" cy="36" r="8" fill="#e8f0fe" stroke="#56c1e8" stroke-width="2"/>
+    <circle cx="28" cy="36" r="3" fill="#56c1e8"/>
+    <!-- Right stick with arrow (replacement) -->
+    <circle cx="52" cy="36" r="8" fill="#e8f0fe" stroke="#22c55e" stroke-width="2"/>
+    <path d="M52 32 L52 40 M48 36 L56 36" stroke="#22c55e" stroke-width="2" stroke-linecap="round"/>
+    <!-- D-pad -->
+    <rect x="22" y="48" width="4" height="10" rx="1" fill="rgba(255,255,255,.4)"/>
+    <rect x="18" y="52" width="12" height="3" rx="1" fill="rgba(255,255,255,.4)"/>
+    <!-- Buttons -->
+    <circle cx="48" cy="50" r="2" fill="rgba(255,255,255,.4)"/>
+    <circle cx="54" cy="46" r="2" fill="rgba(255,255,255,.4)"/>
+    <circle cx="54" cy="54" r="2" fill="rgba(255,255,255,.4)"/>
+    <circle cx="60" cy="50" r="2" fill="rgba(255,255,255,.4)"/>
+  </g>
+  <!-- LEMMA text -->
+  <text x="100" y="52" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="42" font-weight="800" fill="#0f2b4c" letter-spacing="-1">LEMMA</text>
+  <!-- Subtitle -->
+  <text x="100" y="76" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#1a5ea8" letter-spacing="2">РЕМОНТ ДЖОЙСТИКІВ · ЗАМІНА СТІКІВ</text>
+</svg>
