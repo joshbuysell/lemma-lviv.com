@@ -490,6 +490,7 @@ ul {
 /* ─── Problem Section ─── */
 .problem__grid {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 2rem;
   max-width: 56rem;
   margin: 0 auto;
@@ -500,16 +501,18 @@ ul {
   border-radius: var(--radius-lg);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .problem-card--bad {
-  background: rgba(239, 68, 68, 0.06);
-  border: 1px solid rgba(239, 68, 68, 0.15);
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.2);
 }
 
 .problem-card--good {
-  background: rgba(16, 185, 129, 0.06);
-  border: 1px solid rgba(16, 185, 129, 0.15);
+  background: rgba(139, 92, 246, 0.08);
+  border: 1px solid rgba(139, 92, 246, 0.2);
 }
 
 .problem-card__label {
@@ -524,7 +527,7 @@ ul {
 }
 
 .problem-card--bad .problem-card__label { color: var(--color-red); }
-.problem-card--good .problem-card__label { color: var(--color-green); }
+.problem-card--good .problem-card__label { color: var(--color-primary-light); }
 
 .problem-card__title {
   font-size: 1.35rem;
@@ -537,23 +540,24 @@ ul {
   color: var(--color-text-muted);
   line-height: 1.7;
   margin-bottom: 1rem;
+  flex: 1;
 }
 
 .problem-card__visual {
-  height: 100px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: var(--radius);
-  margin-top: 0.5rem;
+  margin-top: auto;
 }
 
 .problem-card--bad .problem-card__visual {
-  background: rgba(239, 68, 68, 0.05);
+  background: rgba(239, 68, 68, 0.06);
 }
 
 .problem-card--good .problem-card__visual {
-  background: rgba(16, 185, 129, 0.05);
+  background: rgba(139, 92, 246, 0.06);
 }
 
 /* ─── Services ─── */
@@ -1292,7 +1296,7 @@ ul {
 /* ─── Responsive ─── */
 @media (min-width: 640px) {
   .btn--call__label { display: inline; }
-  .problem__grid { grid-template-columns: 1fr 1fr; }
+  .problem__grid { grid-template-columns: 1fr 1fr; align-items: stretch; }
   .sensor__grid { grid-template-columns: 1fr 1fr; }
   .steps__grid { grid-template-columns: 1fr 1fr; }
 }
